@@ -1,19 +1,78 @@
-export default function LandingPage() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-white text-zinc-900">
-      <div className="text-center px-6">
-        <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight">
-          Blue Kymera
-        </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Kymera</title>
+  <meta
+    name="description"
+    content="Blue Kymera explores data, analytics, AI, compliance and anti-money laundering."
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #18181b;
+    }
 
-        <p className="mt-6 text-lg text-zinc-600 max-w-xl mx-auto leading-relaxed">
-          A developing publication exploring data, analytics and AI, with practical insight into compliance, anti-money laundering, and decision-making in modern organisations.
-        </p>
+    .wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
 
-        <p className="mt-6 text-sm text-zinc-400">
-          Coming soon
-        </p>
-      </div>
+    .content {
+      text-align: center;
+      max-width: 720px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 56px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .description {
+      margin: 24px auto 0;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #52525b;
+    }
+
+    .coming-soon {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #a1a1aa;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <h1>Blue Kymera</h1>
+
+      <p class="description">
+        A developing publication exploring data, analytics and AI,
+        with practical insight into compliance, anti-money laundering, and decision-making
+        in modern organisations.
+      </p>
+
+      <p class="coming-soon">Coming soon</p>
     </div>
-  );
-}
+  </div>
+</body>
+</html>
