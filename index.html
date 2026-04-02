@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qubit Advisory</title>
+  <meta name="description" content="AML compliance support for Tranche 2 businesses" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+      --dark: #0f172a;
+      --white: #ffffff;
+      --container: 1120px;
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(var(--container), calc(100% - 48px)); margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+    .brand { font-size: 24px; font-weight: 700; }
+    .nav-links { display: flex; gap: 24px; font-size: 14px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+      padding: 80px 0;
+    }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #64748b;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 52px;
+      line-height: 1.05;
+      margin: 0;
+    }
+    .lead {
+      font-size: 20px;
+      color: var(--muted);
+      margin: 24px 0 0;
+      max-width: 680px;
+    }
+    .actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .btn-primary { background: var(--dark); color: var(--white); }
+    .btn-secondary { border: 1px solid #cbd5e1; color: var(--text); background: var(--white); }
+    .panel {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px;
+    }
+    .card-stack { display: grid; gap: 16px; }
+    .mini-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 20px;
+      border: 1px solid #f1f5f9;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .mini-card h3, .service-card h3 { margin: 0 0 8px; font-size: 18px; }
+    .mini-card p, .service-card p, .section-copy { margin: 0; color: var(--muted); }
+    section.section-light {
+      border-top: 1px solid var(--border);
+      background: var(--light);
+      padding: 72px 0;
+    }
+    section.section {
+      padding: 72px 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 34px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+      background: var(--white);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    }
+    .contact {
+      border-top: 1px solid #1e293b;
+      background: var(--dark);
+      color: var(--white);
+      padding: 72px 0;
+    }
+    .contact p { color: #cbd5e1; }
+    .contact-list { margin-top: 28px; display: grid; gap: 12px; }
+    .contact-list a { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .services { grid-template-columns: 1fr; }
+      h1 { font-size: 40px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Qubit Advisory</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="eyebrow">AML compliance support for Tranche 2 businesses</div>
+        <h1>Practical AML support to help your business get compliant with confidence</h1>
+        <p class="lead">
+          From AML pulse checks to full program design, onboarding controls, reporting uplift, and independent reviews, Qubit Advisory helps businesses build practical, right-sized AML capability.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Book a conversation</a>
+          <a class="btn btn-secondary" href="#services">See services</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="card-stack">
+          <div class="mini-card">
+            <h3>Clear AML guidance</h3>
+            <p>We help businesses understand what is required, what is missing, and what to do next.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Practical implementation</h3>
+            <p>Our focus is on workable AML controls that support compliance without creating unnecessary friction.</p>
+          </div>
+          <div class="mini-card">
+            <h3>Immediate next steps</h3>
+            <p>Start with a pulse check, targeted training, or a tailored uplift plan for your business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-light">
+      <div class="container">
+        <h2>About</h2>
+        <p class="section-copy">
+          Qubit Advisory supports businesses that need clear, commercially practical help with AML obligations. We work with organisations that want to move quickly from uncertainty to action, whether that means understanding their exposure, designing a tailored AML program, improving onboarding and monitoring controls, or preparing for AUSTRAC obligations with confidence.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services">
+          <div class="service-card">
+            <h3>AML Free Pulse Check</h3>
+            <p>A simple starting point to identify key AML gaps, priority risks, and practical next steps for your business.</p>
+          </div>
+          <div class="service-card">
+            <h3>AML High-Value Red Flag Training</h3>
+            <p>Targeted training to help your team identify warning signs, escalate concerns, and strengthen day-to-day AML decision-making.</p>
+          </div>
+          <div class="service-card">
+            <h3>AML Program and Risk Assessment</h3>
+            <p>Tailored AML program design and risk assessment aligned to your business model, customers, channels, and operational realities.</p>
+          </div>
+          <div class="service-card">
+            <h3>AML Officer Support</h3>
+            <p>Support for appointing and standing up the AML officer function, including director-level accountability considerations.</p>
+          </div>
+          <div class="service-card">
+            <h3>CDD and KYC</h3>
+            <p>Customer due diligence at onboarding and remediation, including KYC, PEP assessment, and uplift of customer records.</p>
+          </div>
+          <div class="service-card">
+            <h3>Monitoring and Reporting Setup</h3>
+            <p>One-off setup of threshold monitoring, sanctions screening, SMR processes, and other core AML reporting controls.</p>
+          </div>
+          <div class="service-card">
+            <h3>Ongoing Monitoring and Reporting</h3>
+            <p>Ongoing threshold monitoring, sanctions monitoring, reporting support, and operational AML oversight.</p>
+          </div>
+          <div class="service-card">
+            <h3>Independent Reviews and Annual Refresh</h3>
+            <p>Mandatory AML independent reviews plus annual AML program and risk assessment refresh tailored to business changes.</p>
+          </div>
+          <div class="service-card">
+            <h3>AUSTRAC Enrolment Assistance</h3>
+            <p>Practical assistance to help your business prepare for and complete AUSTRAC enrolment requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Contact Qubit Advisory to discuss AML uplift, onboarding controls, reporting obligations, independent reviews, annual refresh requirements, or AUSTRAC enrolment support.
+        </p>
+        <div class="contact-list">
+          <div><strong>Ivan Chua:</strong> <a href="mailto:ivan@qubit.com.au">ivan@qubit.com.au</a></div>
+          <div><strong>Krzysztof Lyson:</strong> <a href="mailto:krzysztof@qubit.com.au">krzysztof@qubit.com.au</a></div>
+          <div><strong>Peter Lloyd:</strong> <a href="mailto:peter@qubit.com.au">peter@qubit.com.au</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
